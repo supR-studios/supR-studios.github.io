@@ -3,6 +3,54 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {margin: 0;}
 
 .btn {
@@ -52,7 +100,7 @@ ul.topnav li.right {float: right;}
 }
 </style>
 </head>
-<body>
+<body style="background-color: #FF474C;">
 
 <ul class="topnav">
   <li><a class="active" href="./index.html">Home</a></li>
@@ -69,6 +117,38 @@ ul.topnav li.right {float: right;}
 <a class="btn" href="./games.html">
 Check out the games!
 </a>
+<hr>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gameTest.png">
+      <img src="gameTest.png" alt="gametest" width="600" height="400">
+    </a>
+    <div class="desc">horror mode (seems not scary but it is!)</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gameTest2.png">
+      <img src="gameTest2.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">running away in casual mode</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gameTest3.png">
+      <img src="gameTest3.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">time to rage and destroy my setup</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 <p>
 fun fact: we, at the time we're writing this, only have 1 game online!
 </p>

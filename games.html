@@ -3,6 +3,41 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+body{
+  background-color:#777;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 21px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 21px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
 body {margin: 0;}
 
 ul.topnav {
@@ -46,7 +81,15 @@ ul.topnav li.right {float: right;}
 
 <div style="padding:0 16px;">
   <h2>Here are the games currently out and the ones in BETA</h2>
-  <a href="https://github.com/supR-studios/catchNRun/releases/tag/beta">catchNRun windows</a>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="gameTest.png">
+        <img src="gameTest.png" alt="gametest" width="600" height="400">
+      </a>
+      <div class="desc" style="color: #000;"><h1 style="font:900">catchNRun</h1></div>
+    </div>
+  </div>
+  
 </div>
 
 </body>

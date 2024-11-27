@@ -3,6 +3,43 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+
+body{
+  background-color:#777;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 21px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 21px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
 body {margin: 0;}
 
 ul.topnav {
@@ -43,14 +80,27 @@ ul.topnav li.right {float: right;}
   <li><a class="active" href="./team.html">Who's behind the team</a></li>
   <li class="right"><a href="./contact.html">Contact us</a></li>
 </ul>
-
+<h1>who's working on these masterpieces?</h1>
 <div style="padding:0 16px;">
-  <h1>Who's working on these masterpieces?</h1>
-  <ol>
-    <li>supr10: programmer</li>
-    <li>calasquad: designer</li>
-  </ol>
-</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://github.com/supr10">
+        <img src="https://avatars.githubusercontent.com/u/136497856?s=400&u=a345f771661efc0fdb14f264635fdd7c9c6bdab8&v=4" alt="gametest" width="600" height="400">
+      </a>
+      <div class="desc" style="color: #000;"><h1 style="font:900">Supr10, main programmer</h1></div>
+    </div>
+  </div>
+
+  <div style="padding:0 16px;">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://github.com/CalaSquad">
+          <img src="https://avatars.githubusercontent.com/u/135050631?v=4" alt="gametest" width="600" height="400">
+        </a>
+        <div class="desc" style="color: #000;"><h1 style="font:900">CalaSquad: head assistant</h1></div>
+      </div>
+    </div>
+  
 
 </body>
 </html>
